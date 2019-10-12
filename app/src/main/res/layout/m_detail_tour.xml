@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/mdetImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/outdoors_cities">
+    </ImageView>
+    <TextView
+        android:id="@+id/mdetInfo"
+        android:layout_width="wrap_content"
+        android:text="University - Educational Tour"
+        android:textSize="@dimen/infoText"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/info"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/mdetJudul"
+        android:layout_width="wrap_content"
+        android:text="Educational Tour A"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:textSize="@dimen/mediumText"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/mdetPrice"
+        android:layout_width="wrap_content"
+        android:text="Rp. 25.000 / person"
+        android:textColor="@color/black"
+        android:textSize="@dimen/priceText"
+        android:layout_marginBottom="4dp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"/>
+        <TextView
+            android:id="@+id/mdetReview"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(279 Reviews)"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EduDetail_List">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_corner"
+                android:hint="Edukatrip"
+                android:textColor="@color/searchtext"
+                android:paddingStart="10dp"></EditText>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="@color/darkgray"></ImageView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/tbSearch">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/parImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/belgrade_serbia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="EDUCATIONAL TOUR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/largeText"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parImg"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="Best Rated Educational Tour in Bandung"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/largeText"
+                    android:textStyle="bold" />
+
+                <com.edukatrip.edukatrip.DetailEduTour.customGridView
+                    android:id="@+id/gridRated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:numColumns="2"
+                    >
+
+                </com.edukatrip.edukatrip.DetailEduTour.customGridView>
+
+                <Button
+                    android:id="@+id/btnShowRated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:text="Show All"
+                    android:textColor="@color/info"></Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="Best Price Educational Tour in Bandung"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/largeText"
+                    android:textStyle="bold" />
+
+                <com.edukatrip.edukatrip.DetailEduTour.customGridView
+                    android:id="@+id/gridPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:numColumns="2"></com.edukatrip.edukatrip.DetailEduTour.customGridView>
+
+                <Button
+                    android:id="@+id/btnShowPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:text="Show All"
+                    android:textColor="@color/info"></Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/menu_bot_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"></include>
+
+
+</RelativeLayout>
