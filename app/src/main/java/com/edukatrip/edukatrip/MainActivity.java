@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
    public void go(View v){
-        startActivity( new Intent(this,EduDetail_List.class));
+        startActivity( new Intent(this,ChooseDate.class));
     }
 }
