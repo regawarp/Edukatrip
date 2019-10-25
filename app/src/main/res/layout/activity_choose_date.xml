@@ -4,39 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChooseDate">
+    tools:context=".ChooseDateActivity">
 
     <com.edukatrip.edukatrip.CalendarView.CustomCalendarView
         android:id="@+id/datepicker"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent" />
 
-
-    <RelativeLayout
+    <include
+        layout="@layout/tb_choose_date"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:background="@color/white"
-        android:layout_height="60dp">
-        <TextView
-            android:id="@+id/choosenDate"
-            android:textColor="@color/darkgray"
-            android:textStyle="bold"
-            android:layout_marginStart="17dp"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choosen Date 2019"/>
-
-        <Button
-            android:id="@+id/chooseDate"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="17dp"
-            android:background="@drawable/btn_choose_date"
-            android:text="Choose"
-            android:textColor="@color/white"
-            android:textAllCaps="false"/>
-    </RelativeLayout>
+        android:layout_height="60dp"/>
 </RelativeLayout>

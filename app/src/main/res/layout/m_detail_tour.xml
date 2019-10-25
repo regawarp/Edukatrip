@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:text="Rp. 25.000 / person"
         android:textColor="@color/black"
-        android:textSize="@dimen/priceText"
+        android:textSize="@dimen/smallText"
         android:layout_marginBottom="4dp"
         android:layout_height="wrap_content">
     </TextView>
@@ -67,7 +67,7 @@
         <TextView
             android:id="@+id/mdetReview"
             android:gravity="center_vertical"
-            android:textSize="@dimen/priceText"
+            android:textSize="@dimen/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(279 Reviews)"/>

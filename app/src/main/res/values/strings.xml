@@ -1,3 +1,53 @@
 <resources>
     <string name="app_name">Edukatrip</string>
+    <string name="home">Home</string>
+    <string name="transaction">Transaction</string>
+    <string name="trips">Trips</string>
+    <string name="inbox">Inbox</string>
+    <string name="setting">Setting</string>
+    <string name="what_can_we_help_you">What can we help you find?</string>
+    <string name="educational_tour">Educational Tour</string>
+    <string name="create_your_own_tour">Create your own Tour</string>
+    <string name="promotions_and_best_deals"><![CDATA[Promotions & Best Deals]]></string>
+    <string name="favorited_tour_types">Favorited Tour Types</string>
+    <string name="best_rated_trip_just_for_you">Best rated trip just for you!</string>
+    <string name="trip_to_best_uni_bandung">A Trip to the Best Universities in Bandung</string>
+    <string name="bandung_uni_trip">Bandung University Trip</string>
+    <string name="best_price_edu_tour_in_bandung">Best Price Educational Tour in Bandung</string>
+    <string name="best_rated_edu_tour_in_bandung">Best Rated Educational Tour in Bandung</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="experience">Experience</string>
+    <string name="user">User</string>
+    <string name="recent_tour">Recent Tour</string>
+    <string name="limited_tour_you_can_enjoy">Limited tour you can enjoy!</string>
+    <string name="favorite_tour">Favorite Tour</string>
+
+    <!-- Custom Calendar View -->
+    <!-- Weekday -->
+    <string name="sun">S</string>
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thu">T</string>
+    <string name="fri">F</string>
+    <string name="sat">S</string>
+    <!-- Month-->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="desember">Desember</string>
+
+
+    <!-- Button -->
+    <string name="show_all">Show All</string>
 </resources>

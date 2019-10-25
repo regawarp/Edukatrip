@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EduTourFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/parImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/belgrade_serbia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/educational_tour"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parImg"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="@string/best_rated_edu_tour_in_bandung"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold" />
+
+            <com.edukatrip.edukatrip.DetailEduTour.customGridView
+                android:id="@+id/gridRated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp">
+
+            </com.edukatrip.edukatrip.DetailEduTour.customGridView>
+
+            <Button
+                android:id="@+id/btnShowRated"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:text="@string/show_all"
+                android:textColor="@color/info">
+
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="@string/best_price_edu_tour_in_bandung"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold" />
+
+            <com.edukatrip.edukatrip.DetailEduTour.customGridView
+                android:id="@+id/gridPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp">
+
+            </com.edukatrip.edukatrip.DetailEduTour.customGridView>
+
+            <Button
+                android:id="@+id/btnShowPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:text="@string/show_all"
+                android:textColor="@color/info"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="exlargeText">24sp</dimen>
     <dimen name="largeText">16sp</dimen>
-    <dimen name="mediumText">12sp</dimen>
+    <dimen name="mediumText">14sp</dimen>
+    <dimen name="smallText">12sp</dimen>
+    <dimen name="exsmallText">11sp</dimen>
+    <dimen name="priceText">10sp</dimen>
     <dimen name="infoText">8sp</dimen>
-    <dimen name="priceText">8sp</dimen>
 </resources>

@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <View
             android:id="@+id/slider"
             android:layout_width="match_parent"
@@ -41,6 +42,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/eduTour"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         app:cardUseCompatPadding="true">
@@ -601,11 +603,6 @@
 
                     </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="'Tournya keren, Tourguide/Drivernya tau banget daerah-daerahnya, Mantap!'"
-                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/dateCell"
+    android:tag="NOT"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp">
-    <TextView
-        android:id="@+id/calendar_date_id"
+    android:layout_height="52dp">
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/mediumText"
-        android:layout_gravity="center"
-        android:text="@string/last"/>
-    <LinearLayout
-        android:id="@+id/event_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:gravity="right"
-        android:orientation="horizontal">
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/event_id"
-            android:layout_width="4dp"
-            android:layout_height="4dp"/>
-    </LinearLayout>
-</LinearLayout>
+            android:id="@+id/calendar_date_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/mediumText"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="30"/>
+        <TextView
+            android:id="@+id/calendar_day_id"
+            android:textSize="9sp"
+            android:layout_below="@id/calendar_date_id"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="tue"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
