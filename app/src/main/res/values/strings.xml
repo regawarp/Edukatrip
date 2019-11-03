@@ -21,4 +21,18 @@
     <string name="recent_tour">Recent Tour</string>
     <string name="limited_tour_you_can_enjoy">Limited tour you can enjoy!</string>
     <string name="favorite_tour">Favorite Tour</string>
+    <string name="please_review_booking">Please review your booking details before continuing to payment</string>
+    <string name="title_of_tour">Title of Tour</string>
+    <string name="see_details">See Details</string>
+    <string name="date_of_tour">Date of Tour</string>
+    <string name="total_person">Total Person</string>
+    <string name="tour_guide">Tour Guide</string>
+    <string name="cancelation_policy">Cancelation Policy Applies</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="price_details">Price Details</string>
+    <string name="tax">Tax</string>
+    <string name="included">Included</string>
+    <string name="total">Total</string>
+    <string name="continue_payment">Continue Payment</string>
 </resources>
