@@ -45,4 +45,9 @@
     <string name="include_travel_time">Include the travel from previous destination to this destination to the timeline</string>
     <string name="total_cost">Total Cost</string>
     <string name="add_to_next_destination">Add to Next Destination</string>
+    <string name="view_report">View Report</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="method">Method</string>
+    <string name="pembayaran_berhasil">Pembayaran Berhasil</string>
+    <string name="pembayaran_terverifikasi">Pembayaran anda telah terverifikasi</string>
 </resources>
