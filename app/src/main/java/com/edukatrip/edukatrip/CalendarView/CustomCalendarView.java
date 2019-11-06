@@ -7,6 +7,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
@@ -28,6 +29,9 @@ import java.util.List;
 import java.util.Locale;
 
 import androidx.annotation.Nullable;
+import androidx.transition.Fade;
+import androidx.transition.Transition;
+import androidx.transition.TransitionManager;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
 
@@ -43,7 +47,7 @@ public class CustomCalendarView extends LinearLayout {
     private SimpleDateFormat formatter = new SimpleDateFormat("MMMM yyyy", Locale.ENGLISH);
     private DateAdapter mAdapter;
     private Date choosen;
-    private TextView txt;
+    private View tb;
 
     public CustomCalendarView(Context context) {
         super(context);
@@ -75,8 +79,8 @@ public class CustomCalendarView extends LinearLayout {
         }
         super.onMeasure(widthMeasureSpec, heightSpec);
     }
-    public void setTextView(TextView txt){
-        this.txt = txt;
+    public void setView(View tb){
+        this.tb = tb;
     }
 
     private void setUIlayout() {
@@ -129,7 +133,7 @@ public class CustomCalendarView extends LinearLayout {
                     tgl.setTypeface(Typeface.DEFAULT_BOLD);
                     dateview.setVisibility(VISIBLE);
                     choosen =(Date) mAdapter.getItem(position);
-                    txt.setText(getDate());
+                    tb.setVisibility(VISIBLE);
                 }else if(stat.equals("UnClicked")){
 
                 }else{
@@ -138,6 +142,7 @@ public class CustomCalendarView extends LinearLayout {
                     tgl.setTextColor(getResources().getColor(R.color.black));
                     tgl.setTypeface(Typeface.DEFAULT);
                     dateview.setVisibility(GONE);
+                    tb.setVisibility(GONE);
                     choosen =(Date) mAdapter.getItem(position);
 
                 }

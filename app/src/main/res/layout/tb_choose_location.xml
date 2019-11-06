@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:id="@+id/tb_choose_date"
+<LinearLayout android:id="@+id/tb_choose_date"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <View
-        android:id="@+id/tb_date_shadow"
+        android:id="@+id/tb_location_shadow"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@drawable/tb_drop_shadow" />
@@ -16,42 +16,55 @@
         android:layout_height="60dp"
         android:background="@color/white">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:padding="12dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/choosenDate"
+                android:id="@+id/txt_total_cost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:text="Choosen Date 2019"
+                android:text="@string/total_cost"
                 android:textColor="@color/darkgray"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/priceDate"
+                android:id="@+id/priceLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/choosenDate"
-                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
                 android:text="price"
                 android:textColor="@color/info"
-                android:textSize="@dimen/priceText" />
-        </LinearLayout>
+                android:textSize="@dimen/priceText"
+                app:layout_constraintTop_toBottomOf="@id/txt_total_cost"
+                app:layout_constraintStart_toStartOf="@id/txt_total_cost"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/per_person"
+                android:textColor="@color/darkgray"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/priceText"
+                app:layout_constraintTop_toTopOf="@id/priceLocation"
+                app:layout_constraintStart_toEndOf="@id/priceLocation"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <Button
-            android:id="@+id/chooseDate"
+            android:id="@+id/chooseLocation"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="17dp"
             android:background="@drawable/btn_round_corner"
-            android:text="Choose"
+            android:text="@string/choose_location"
             android:textAllCaps="false"
             android:textColor="@color/white" />
     </RelativeLayout>
