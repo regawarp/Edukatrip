@@ -1,15 +1,12 @@
 package com.edukatrip.edukatrip;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.transition.Fade;
-import androidx.transition.Transition;
-import androidx.transition.TransitionManager;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.edukatrip.edukatrip.CalendarView.CustomCalendarView;
+import com.edukatrip.edukatrip.calendarview.CustomCalendarView;
 
 public class ChooseDateActivity extends AppCompatActivity {
     CustomCalendarView dateChooser;

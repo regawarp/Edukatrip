@@ -1,7 +1,6 @@
-package com.edukatrip.edukatrip.TourGuide;
+package com.edukatrip.edukatrip.tourguide;
 
 import android.content.Context;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
-
-import java.util.List;
-
-import androidx.annotation.NonNull;
 
 public class ListTourGuideAdapter extends BaseAdapter {
     private Context context;

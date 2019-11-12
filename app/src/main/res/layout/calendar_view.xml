@@ -34,7 +34,7 @@
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/arrow_left" />
+            android:src="@drawable/arrow_left_blue" />
         <ImageView
             android:id="@+id/btnNextMonth"
             android:layout_width="50dp"

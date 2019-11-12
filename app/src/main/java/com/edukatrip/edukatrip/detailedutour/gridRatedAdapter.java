@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.DetailEduTour;
+package com.edukatrip.edukatrip.detailedutour;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,10 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
-
-import java.util.List;
-
-import androidx.annotation.NonNull;
 
 public class gridRatedAdapter extends BaseAdapter {
     private Context context;

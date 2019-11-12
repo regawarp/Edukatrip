@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ChooseDateActivity">
 
-    <com.edukatrip.edukatrip.CalendarView.CustomCalendarView
+    <com.edukatrip.edukatrip.calendarview.CustomCalendarView
         android:id="@+id/datepicker"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

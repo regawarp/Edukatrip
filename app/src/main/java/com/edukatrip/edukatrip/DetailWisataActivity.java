@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.edukatrip.edukatrip.DetailWisata.DetailReviewsAdapter;
-import com.edukatrip.edukatrip.DetailWisata.Reviews;
+import com.edukatrip.edukatrip.detailwisata.DetailReviewsAdapter;
+import com.edukatrip.edukatrip.detailwisata.Reviews;
 
 import java.util.ArrayList;
 import java.util.List;

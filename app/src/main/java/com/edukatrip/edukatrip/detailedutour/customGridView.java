@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.DetailEduTour;
+package com.edukatrip.edukatrip.detailedutour;
 
 import android.content.Context;
 import android.util.AttributeSet;
