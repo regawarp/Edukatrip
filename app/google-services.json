@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "158783255248-74511ju5rbafvfb33mvsoer3tpjqalbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edukatrip.edukatrip",
+            "certificate_hash": "9c80b970f4d540b8f5d1ce6f963714bd93208dbc"
+          }
+        },
+        {
           "client_id": "158783255248-85m9ec85grgiv2d50l8mnffvpbtpncbg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
