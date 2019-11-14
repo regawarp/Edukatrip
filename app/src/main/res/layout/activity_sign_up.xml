@@ -76,7 +76,7 @@
                 android:text="@string/prompt_email"/>
 
             <EditText
-                android:id="@+id/sign_in_input_email"
+                android:id="@+id/sign_up_input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_vertical_margin"
@@ -92,7 +92,7 @@
                 android:text="@string/prompt_mobile"/>
 
             <EditText
-                android:id="@+id/sign_in_input_mobile"
+                android:id="@+id/sign_up_input_mobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_vertical_margin"
@@ -109,12 +109,28 @@
                 android:text="@string/prompt_password"/>
 
             <EditText
-                android:id="@+id/sign_in_input_password"
+                android:id="@+id/sign_up_input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/activity_vertical_margin"
                 android:background="@drawable/bg_input_sign_in"
                 android:hint="@string/prompt_password"
+                android:textSize="@dimen/mediumText"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_confirm_password"/>
+
+            <EditText
+                android:id="@+id/sign_up_input_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_input_sign_in"
+                android:hint="@string/prompt_confirm_password"
                 android:textSize="@dimen/mediumText"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"/>

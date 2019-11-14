@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookTourActivity"></activity>
+        <activity android:name=".DetailEduTourActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BookTourActivity" />
         <activity
             android:name=".ChoosePaymentActivity"
             android:label="@string/choose_payment_method" />
@@ -32,13 +34,13 @@
         </activity>
         <activity
             android:name=".login.SignUpActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChooseDateActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
