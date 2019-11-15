@@ -3,6 +3,9 @@ package com.edukatrip.edukatrip;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -28,4 +31,17 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        CardView educationalTour = (CardView) view.findViewById(R.id.eduTour);
+
+        educationalTour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EduTourFragment fragment = new EduTourFragment();
+                ((MainActivity)getActivity()).openFragment(fragment);
+            }
+        });
+    }
 }

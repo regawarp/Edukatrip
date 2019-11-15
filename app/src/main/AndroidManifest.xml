@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -12,13 +13,37 @@
         <activity android:name=".PaymentReportActivity"></activity>
         <activity android:name=".AddNextDestination" />
         <activity android:name=".ReviewBookingActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DetailEduTourActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BookTourActivity" />
+        <activity
+            android:name=".ChoosePaymentActivity"
+            android:label="@string/choose_payment_method" />
+        <activity
+            android:name=".ChooseWhatActivity"
+            android:label="@string/choose_what_you_need" />
+        <activity
+            android:name=".DetailWisataActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TourGuideActivity" />
+        <activity
+            android:name=".login.SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".login.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseDateActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseWhatActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/book_driver_bg" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/imageFront" />
+
+            <Button
+                android:id="@+id/booktour_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="20dp"
+                android:drawableRight="@drawable/arrow_right_black"
+                android:padding="20dp"
+                android:text="Book Driver"
+                android:textAllCaps="false"
+                android:textSize="@dimen/largeText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txt_book_driver_info"
+                app:layout_constraintStart_toStartOf="@id/booktour_btn" />
+
+            <TextView
+                android:id="@+id/txt_book_driver_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/driver_detail"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/booktour_btn"
+                app:layout_constraintStart_toStartOf="@id/booktour_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/book_tour_guide_bg" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/imageFront" />
+
+            <Button
+                android:id="@+id/booktour_btn_tour_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="20dp"
+                android:drawableRight="@drawable/arrow_right_black"
+                android:padding="20dp"
+                android:text="Book Tour Guide"
+                android:textAllCaps="false"
+                android:textSize="@dimen/largeText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tour_guide"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txt_booktouinfo"
+                app:layout_constraintStart_toStartOf="@id/booktour_btn_tour_guide" />
+
+            <TextView
+                android:id="@+id/txt_booktouinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/tour_guide_detail"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/booktour_btn_tour_guide"
+                app:layout_constraintStart_toStartOf="@id/booktour_btn_tour_guide" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/choose_what_you_need_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.ActionBar.Transparent"
+        app:popupTheme="@style/AppTheme.PopUpOverlay" />
+
+
+</RelativeLayout>

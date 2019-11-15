@@ -13,8 +13,9 @@
     <string name="best_rated_trip_just_for_you">Best rated trip just for you!</string>
     <string name="trip_to_best_uni_bandung">A Trip to the Best Universities in Bandung</string>
     <string name="bandung_uni_trip">Bandung University Trip</string>
+    <string name="best_price_edu_tour_in_bandung">Best Price Educational Tour in Bandung</string>
+    <string name="best_rated_edu_tour_in_bandung">Best Rated Educational Tour in Bandung</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="experience">Experience</string>
     <string name="user">User</string>
@@ -23,10 +24,8 @@
     <string name="favorite_tour">Favorite Tour</string>
     <string name="please_review_booking">Please review your booking details before continuing to payment</string>
     <string name="title_of_tour">Title of Tour</string>
-    <string name="see_details">See Details</string>
     <string name="date_of_tour">Date of Tour</string>
     <string name="total_person">Total Person</string>
-    <string name="tour_guide">Tour Guide</string>
     <string name="cancelation_policy">Cancelation Policy Applies</string>
     <string name="customer_name">Customer Name</string>
     <string name="customer_id">Customer ID</string>
@@ -43,11 +42,86 @@
     <string name="choose_destination">Choose Destination</string>
     <string name="add_description">Add Description</string>
     <string name="include_travel_time">Include the travel from previous destination to this destination to the timeline</string>
-    <string name="total_cost">Total Cost</string>
     <string name="add_to_next_destination">Add to Next Destination</string>
     <string name="view_report">View Report</string>
-    <string name="bank_transfer">Bank Transfer</string>
     <string name="method">Method</string>
     <string name="pembayaran_berhasil">Pembayaran Berhasil</string>
     <string name="pembayaran_terverifikasi">Pembayaran anda telah terverifikasi</string>
+
+    <!-- Custom Calendar View -->
+    <!-- Weekday -->
+    <string name="sun">S</string>
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thu">T</string>
+    <string name="fri">F</string>
+    <string name="sat">S</string>
+    <!-- Month-->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="desember">Desember</string>
+
+
+    <!-- Button -->
+    <string name="show_all">Show All</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_user">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Konfirmasi Password</string>
+    <string name="prompt_mobile">Mobile Phone</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="forgot_password">Forgotten Password?</string>
+    <string name="stay_logged_in">Stay Logged In</string>
+
+    <!-- Deatil Wisata -->
+    <string name="real_view">Real View</string>
+    <string name="tour">Tour</string>
+    <string name="facilities">Facilities</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="parking">Parking</string>
+    <string name="mosque">Mosque</string>
+    <string name="food_stalls">Food Stalls</string>
+    <string name="easy_access">Easy Access</string>
+    <string name="ratings_and_reviews">Rating &amp; Reviews</string>
+    <string name="about_tour">About Tour</string>
+    <string name="see_details">See Details</string>
+
+    <!-- Adapter View Item -->
+    <string name="total_cost"><b>Total Cost</b></string>
+    <string name="per_person">/ person</string>
+    <string name="choose_location">Choose Location</string>
+
+    <!--Choose What You Need -->
+    <string name="choose_what_you_need">Choose What You Need</string>
+    <string name="tour_guide">Tour Guide</string>
+    <string name="tour_guide_detail">A person that will take you to your destination while giving you knowledge about the destination.</string>
+    <string name="driver">Driver</string>
+    <string name="driver_detail">A person that will take you to your destination</string>
+
+    <!-- Choose Payment -->
+    <string name="choose_payment_method">Choose Payment Method</string>
+    <string name="saved_cards">Saved_Cards</string>
+    <string name="debit_credit_cards">Debits/Credit Card</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="minimarket">Minimarket</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    <string name="bank_transfer_text">If you choose bank transfer, you will transfer only to bank listed below</string>
+    <string name="bank_transfer_text2">All bank account name is PT. Edukatrip</string>
+
 </resources>

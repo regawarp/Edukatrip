@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#3E5298</color>
     <color name="colorAccent">#CC3B14</color>
     <color name="colorRed">#ff0000</color>
+    <color name="gray">#e8e8e8</color>
+    <color name="black">#de000000</color>
+    <color name="searchtext">#a5a5a5</color>
+    <color name="darkgray">#989898</color>
+    <color name="white">#ffffff</color>
+    <color name="info">#446fff</color>
+    <color name="darkblue">#446fff</color>
+    <color name="youngBlue">#00c1ff</color>
+    <color name="imageFront">#80000000</color>
+    <color name="orange">#ff8440</color>
 </resources>
