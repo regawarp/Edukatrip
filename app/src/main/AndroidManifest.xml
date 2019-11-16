@@ -10,9 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailEduTourActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".BookTourActivity" />
+        <activity android:name=".AddNextDestinationActivity"></activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment" />
+        <activity
+            android:name=".DetailEduTourActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookTourActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ChoosePaymentActivity"
             android:label="@string/choose_payment_method" />

@@ -29,7 +29,7 @@
                 android:background="@color/imageFront" />
 
             <Button
-                android:id="@+id/booktour_btn"
+                android:id="@+id/choose_what_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
@@ -50,7 +50,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/txt_book_driver_info"
-                app:layout_constraintStart_toStartOf="@id/booktour_btn" />
+                app:layout_constraintStart_toStartOf="@id/choose_what_btn" />
 
             <TextView
                 android:id="@+id/txt_book_driver_info"
@@ -63,8 +63,8 @@
                 android:lines="2"
                 android:text="@string/driver_detail"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toTopOf="@id/booktour_btn"
-                app:layout_constraintStart_toStartOf="@id/booktour_btn" />
+                app:layout_constraintBottom_toTopOf="@id/choose_what_btn"
+                app:layout_constraintStart_toStartOf="@id/choose_what_btn" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         <FrameLayout
@@ -88,7 +88,7 @@
                 android:background="@color/imageFront" />
 
             <Button
-                android:id="@+id/booktour_btn_tour_guide"
+                android:id="@+id/choose_what_btn_tour_guide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
@@ -109,7 +109,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@id/txt_booktouinfo"
-                app:layout_constraintStart_toStartOf="@id/booktour_btn_tour_guide" />
+                app:layout_constraintStart_toStartOf="@id/choose_what_btn_tour_guide" />
 
             <TextView
                 android:id="@+id/txt_booktouinfo"
@@ -122,8 +122,8 @@
                 android:lines="2"
                 android:text="@string/tour_guide_detail"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toTopOf="@id/booktour_btn_tour_guide"
-                app:layout_constraintStart_toStartOf="@id/booktour_btn_tour_guide" />
+                app:layout_constraintBottom_toTopOf="@id/choose_what_btn_tour_guide"
+                app:layout_constraintStart_toStartOf="@id/choose_what_btn_tour_guide" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

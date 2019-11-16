@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/border_gray">
+    <ImageView
+        android:id="@+id/grid_fac_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_date_range_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/grid_fac_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textSize="@dimen/smallText"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkgray"
+        app:layout_constraintStart_toEndOf="@id/grid_fac_image"
+        app:layout_constraintBottom_toTopOf="@id/grid_fac_desc"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/grid_fac_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facilities desc"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/smallText"
+        android:textColor="@color/darkgray"
+        app:layout_constraintStart_toEndOf="@id/grid_fac_image"
+        app:layout_constraintTop_toBottomOf="@id/grid_fac_title"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
+import com.edukatrip.edukatrip.object.TourGuide;
 
 public class ListTourGuideAdapter extends BaseAdapter {
     private Context context;

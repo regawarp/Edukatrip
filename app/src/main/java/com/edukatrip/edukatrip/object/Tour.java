@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.detailedutour;
+package com.edukatrip.edukatrip.object;
 
 public class Tour {
     private int image,bintang;

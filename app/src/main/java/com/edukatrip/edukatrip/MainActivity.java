@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_transaction:
                     return true;
                 case R.id.nav_trips:
+                    ChooseDestinationFragment chooseDestinationFragment = new ChooseDestinationFragment();
+                    openFragment(chooseDestinationFragment);
                     return true;
                 case R.id.nav_inbox:
                     return true;

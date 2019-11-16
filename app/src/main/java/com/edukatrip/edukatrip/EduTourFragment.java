@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.edukatrip.edukatrip.detailedutour.Tour;
-import com.edukatrip.edukatrip.detailedutour.gridRatedAdapter;
+import com.edukatrip.edukatrip.object.Tour;
+import com.edukatrip.edukatrip.listedutour.GridRatedAdapter;
 
 public class EduTourFragment extends Fragment {
     GridView gridRated, gridPrice;
@@ -33,7 +33,7 @@ public class EduTourFragment extends Fragment {
         gridRated = (GridView)v.findViewById(R.id.gridRated);
         gridPrice = (GridView)v.findViewById(R.id.gridPrice);
 
-        gridRatedAdapter ratedAdapter = new gridRatedAdapter(((AppCompatActivity)getActivity()),data);
+        GridRatedAdapter ratedAdapter = new GridRatedAdapter(((AppCompatActivity)getActivity()),data);
         gridRated.setAdapter(ratedAdapter);
 
         gridPrice.setAdapter(ratedAdapter);
@@ -46,6 +46,14 @@ public class EduTourFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button btnRated = (Button)view.findViewById(R.id.btnShowRated);
+        Button btnPrice = (Button)view.findViewById(R.id.btnShowPrice);
+
+        btnPrice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(((MainActivity)getActivity()).getApplicationContext(),PaymentActivity.class));
+            }
+        });
 
         btnRated.setOnClickListener(new View.OnClickListener() {
             @Override

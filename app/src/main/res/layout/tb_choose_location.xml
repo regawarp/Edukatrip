@@ -64,6 +64,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:background="@drawable/btn_round_corner"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
             android:text="@string/choose_location"
             android:textAllCaps="false"
             android:textColor="@color/white" />

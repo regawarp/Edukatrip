@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.detailwisata;
+package com.edukatrip.edukatrip.object;
 
 public class Reviews {
     private String name = "Dimas";

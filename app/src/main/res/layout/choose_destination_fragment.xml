@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/choose_destination_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sunset"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/choose_destination_txt"/>
+        <TextView
+            android:id="@+id/choose_destination_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/exlargeText"
+            android:text="@string/mau_pergi_kemana"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toBottomOf="@id/choose_destination_image"
+            app:layout_constraintBottom_toTopOf="@id/choose_destination_spinner"/>
+        <Spinner
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/choose_destination_spinner"
+            android:layout_width="wrap_content"
+            android:minWidth="300dp"
+            android:minHeight="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/choose_destination_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:entries="@array/spinner_item"
+            app:layout_constraintBottom_toTopOf="@id/choose_destination_button"/>
+
+        <Button
+            android:id="@+id/choose_destination_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@id/choose_destination_spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/search_tour_package"
+            android:minWidth="300dp"
+            android:textColor="@color/white"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_round_corner"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

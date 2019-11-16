@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.tourguide;
+package com.edukatrip.edukatrip.object;
 
 public class TourGuide {
     private int gambar;

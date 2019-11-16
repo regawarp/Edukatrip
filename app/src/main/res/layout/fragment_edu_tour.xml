@@ -50,7 +50,7 @@
                 android:textSize="@dimen/largeText"
                 android:textStyle="bold" />
 
-            <com.edukatrip.edukatrip.detailedutour.customGridView
+            <com.edukatrip.edukatrip.listedutour.CustomGridView
                 android:id="@+id/gridRated"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:numColumns="2"
                 android:verticalSpacing="10dp">
 
-            </com.edukatrip.edukatrip.detailedutour.customGridView>
+            </com.edukatrip.edukatrip.listedutour.CustomGridView>
 
             <Button
                 android:id="@+id/btnShowRated"
@@ -81,7 +81,7 @@
                 android:textSize="@dimen/largeText"
                 android:textStyle="bold" />
 
-            <com.edukatrip.edukatrip.detailedutour.customGridView
+            <com.edukatrip.edukatrip.listedutour.CustomGridView
                 android:id="@+id/gridPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                 android:numColumns="2"
                 android:verticalSpacing="10dp">
 
-            </com.edukatrip.edukatrip.detailedutour.customGridView>
+            </com.edukatrip.edukatrip.listedutour.CustomGridView>
 
             <Button
                 android:id="@+id/btnShowPrice"

@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
+import com.edukatrip.edukatrip.object.Reviews;
 
 import java.util.List;
 

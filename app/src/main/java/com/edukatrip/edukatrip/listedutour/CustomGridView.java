@@ -1,19 +1,19 @@
-package com.edukatrip.edukatrip.detailedutour;
+package com.edukatrip.edukatrip.listedutour;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.GridView;
 
-public class customGridView extends GridView {
-    public customGridView(Context context) {
+public class CustomGridView extends GridView {
+    public CustomGridView(Context context) {
         super(context);
     }
 
-    public customGridView(Context context, AttributeSet attrs) {
+    public CustomGridView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public customGridView(Context context, AttributeSet attrs, int defStyle) {
+    public CustomGridView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

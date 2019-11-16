@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.edukatrip.edukatrip.AddNextDestinationActivity;
+import com.edukatrip.edukatrip.BookTourActivity;
 import com.edukatrip.edukatrip.R;
 
 public class SignInActivity extends AppCompatActivity {
@@ -31,7 +33,7 @@ public class SignInActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+                startActivity(new Intent(getApplicationContext(), BookTourActivity.class));
             }
         });
     }

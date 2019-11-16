@@ -1,4 +1,4 @@
-package com.edukatrip.edukatrip.detailedutour;
+package com.edukatrip.edukatrip.listedutour;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,13 +9,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
+import com.edukatrip.edukatrip.object.Tour;
 
-public class gridRatedAdapter extends BaseAdapter {
+public class GridRatedAdapter extends BaseAdapter {
     private Context context;
     private Tour[] data;
     LayoutInflater inflter;
 
-    public gridRatedAdapter(Context applicationContext, Tour[] data) {
+    public GridRatedAdapter(Context applicationContext, Tour[] data) {
         this.context = applicationContext;
         this.data = data;
         inflter = (LayoutInflater.from(applicationContext));

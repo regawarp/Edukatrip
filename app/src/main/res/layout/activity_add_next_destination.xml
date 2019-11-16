@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_vertical_margin"
+            tools:context=".AddNextDestinationActivity">
+
+            <TextView
+                android:id="@+id/add_next_txt_please"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_fill"
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/add_next_start_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@drawable/ic_watch_later_black_24dp"
+                android:tint="@color/denim_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_txt_please" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/start_time"
+                android:textColor="@color/denim_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintBottom_toBottomOf="@id/add_next_start_icon"
+                app:layout_constraintStart_toEndOf="@id/add_next_start_icon"
+                app:layout_constraintTop_toTopOf="@id/add_next_start_icon" />
+
+            <EditText
+                android:id="@+id/add_next_input_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_edit_text_normal"
+                android:hint="@string/input_time"
+                android:padding="10dp"
+                android:textColorHint="@color/powder_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintEnd_toStartOf="@id/add_next_input_end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_start_icon" />
+
+            <ImageView
+                android:id="@+id/add_next_end_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@drawable/ic_watch_later_black_24dp"
+                android:tint="@color/denim_blue"
+                app:layout_constraintStart_toStartOf="@id/add_next_input_end"
+                app:layout_constraintTop_toBottomOf="@id/add_next_txt_please" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/end_time"
+                android:textColor="@color/denim_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintBottom_toBottomOf="@id/add_next_end_icon"
+                app:layout_constraintStart_toEndOf="@id/add_next_end_icon"
+                app:layout_constraintTop_toTopOf="@id/add_next_end_icon" />
+
+            <EditText
+                android:id="@+id/add_next_input_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_edit_text_normal"
+                android:hint="@string/input_time"
+                android:padding="10dp"
+                android:textColorHint="@color/powder_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/add_next_input_start"
+                app:layout_constraintTop_toBottomOf="@id/add_next_start_icon" />
+
+            <ImageView
+                android:id="@+id/add_next_destination_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:tint="@color/denim_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_input_start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/destintaion"
+                android:textColor="@color/denim_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintBottom_toBottomOf="@id/add_next_destination_icon"
+                app:layout_constraintStart_toEndOf="@id/add_next_destination_icon"
+                app:layout_constraintTop_toTopOf="@id/add_next_destination_icon" />
+
+            <EditText
+                android:id="@+id/add_next_input_destination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_edit_text_normal"
+                android:hint="@string/choose_destination"
+                android:padding="10dp"
+                android:textColorHint="@color/powder_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_destination_icon" />
+
+            <ImageView
+                android:id="@+id/add_next_add_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@drawable/pencil"
+                android:tint="@color/denim_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_input_destination" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/add_description"
+                android:textColor="@color/denim_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintBottom_toBottomOf="@id/add_next_add_icon"
+                app:layout_constraintStart_toEndOf="@id/add_next_add_icon"
+                app:layout_constraintTop_toTopOf="@id/add_next_add_icon" />
+
+            <EditText
+                android:id="@+id/add_next_input_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_edit_text_normal"
+                android:hint="@string/add_description"
+                android:lines="10"
+                android:padding="10dp"
+                android:textColorHint="@color/powder_blue"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_add_icon" />
+
+            <CheckBox
+                android:id="@+id/add_next_check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:button="@drawable/custom_square_checkbock"
+                android:checked="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_next_input_description" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxWidth="300dp"
+                android:text="@string/include_travel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintBottom_toBottomOf="@id/add_next_check"
+                app:layout_constraintStart_toEndOf="@id/add_next_check"
+                app:layout_constraintTop_toTopOf="@id/add_next_check" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        layout="@layout/tb_add_destination"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

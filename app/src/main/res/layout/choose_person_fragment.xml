@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_vertical_margin">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/choose_person_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/berapa_jumlah"
+            android:textSize="@dimen/exlargeText"
+            android:maxLines="2"
+            android:maxWidth="300dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <ImageView
+            android:id="@+id/choose_person_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/info"
+            app:layout_constraintTop_toTopOf="@id/choose_person_spinner"
+            app:layout_constraintBottom_toBottomOf="@id/choose_person_spinner"
+            android:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Spinner
+            android:id="@+id/choose_person_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="50dp"
+            android:entries="@array/spinner_item"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choose_person_text"
+            app:layout_constraintStart_toEndOf="@id/choose_person_image"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:id="@+id/choose_person_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:background="@drawable/btn_round_corner"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white"
+            android:text="@string/next"
+            app:layout_constraintTop_toBottomOf="@id/choose_person_spinner"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip_this"
+            app:layout_constraintTop_toBottomOf="@id/choose_person_btn"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
