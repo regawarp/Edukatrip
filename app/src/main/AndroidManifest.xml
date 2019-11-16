@@ -10,11 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentReportActivity"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".PaymentReportActivity" />
         <activity android:name=".AddNextDestination" />
         <activity android:name=".ReviewBookingActivity" />
-        <activity android:name=".DetailEduTourActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".DetailEduTourActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".BookTourActivity" />
         <activity
             android:name=".ChoosePaymentActivity"

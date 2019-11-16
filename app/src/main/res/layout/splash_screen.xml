@@ -5,10 +5,27 @@
     android:background="#fff">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleX="2.2"
+        android:scaleY="2.2"
+        android:scrollY="40dp"
+        android:src="@drawable/splash_screen_header" />
+
+    <ImageView
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/splash_screen_and_register_footer" />
 
 </RelativeLayout>

@@ -123,5 +123,6 @@
     <string name="proceed_to_payment">Proceed to Payment</string>
     <string name="bank_transfer_text">If you choose bank transfer, you will transfer only to bank listed below</string>
     <string name="bank_transfer_text2">All bank account name is PT. Edukatrip</string>
+    <string name="more">More</string>
 
 </resources>

@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.ActionBar.Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@android:color/transparent</item>
@@ -16,20 +17,28 @@
         <item name="windowActionBarOverlay">true</item>
         <item name="colorControlNormal">@color/white</item>
     </style>
+
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
     </style>
-    <style name="AppTheme.PopUpOverlay" parent="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.PopUpOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
     <!-- Action Bar text -->
-    <style name="MyActionBarTitleText"  parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="MyActionBarTitleText" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SmallGoldRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorAccent">#6200ea</item>
+        <item name="android:colorControlNormal">#f9a825</item>
     </style>
 
 </resources>

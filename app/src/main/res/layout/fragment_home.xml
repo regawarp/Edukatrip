@@ -9,12 +9,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <View
+        <com.smarteist.autoimageslider.SliderView
             android:id="@+id/slider"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:background="#6F6F6F" />
+            android:background="#6F6F6F"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="start|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +41,7 @@
                 android:layout_marginBottom="10dp"
                 android:text="@string/what_can_we_help_you"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView
@@ -54,8 +67,8 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="70dp"
-                                android:scaleType="centerCrop"
-                                android:src="@mipmap/ic_launcher_round" />
+                                android:scaleType="fitXY"
+                                android:src="@drawable/outdoors_cities" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -81,8 +94,8 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="70dp"
-                                android:scaleType="centerCrop"
-                                android:src="@mipmap/ic_launcher_round" />
+                                android:scaleType="fitXY"
+                                android:src="@drawable/outdoors_cities" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -109,7 +122,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="70dp"
                                 android:scaleType="centerCrop"
-                                android:src="@mipmap/ic_launcher_round" />
+                                android:src="@drawable/outdoors_cities" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -129,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/promotions_and_best_deals"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView
@@ -153,7 +166,7 @@
                             android:layout_width="220dp"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@drawable/outdoors_cities" />
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -169,7 +182,7 @@
                             android:layout_width="220dp"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@drawable/outdoors_cities" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -181,7 +194,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="@string/favorited_tour_types"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -220,7 +233,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:scaleType="centerCrop"
-                                    android:src="@mipmap/ic_launcher" />
+                                    android:src="@drawable/outdoors_cities" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -266,7 +279,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:scaleType="centerCrop"
-                                    android:src="@mipmap/ic_launcher" />
+                                    android:src="@drawable/outdoors_cities" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -300,142 +313,158 @@
                 android:layout_marginBottom="5dp"
                 android:text="@string/favorite_tour"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <com.edukatrip.edukatrip.detailedutour.customGridView
+                android:id="@+id/grid_favorite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_marginBottom="5dp"
-                        android:background="#ff11ff"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="University - Educational Tour"
-                        android:textAllCaps="true"
-                        android:textColor="#03A9F4"
-                        android:textSize="12sp" />
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/outdoors_cities" />-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="Educational Tour A"
-                        android:textColor="#000"
-                        android:textSize="14sp" />
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="University - Educational Tour"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="#03A9F4"-->
+            <!--android:textSize="8sp" />-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="Rp 25.000 / person"
-                        android:textColor="#000"
-                        android:textSize="12sp" />
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Educational Tour A"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="14sp" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Rp 25.000 / person"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="12sp" />-->
 
-                        <RatingBar
-                            style="?android:attr/ratingBarStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center_vertical"
-                            android:text="(279 Review)"
-                            android:textColor="#000"
-                            android:textSize="10sp" />
-                    </LinearLayout>
+            <!--<RatingBar-->
+            <!--style="?android:attr/ratingBarStyleSmall"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="5dp" />-->
 
-                </LinearLayout>
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="(279 Review)"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="10sp" />-->
+            <!--</LinearLayout>-->
 
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
+            <!--</LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+            <!--<View-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="wrap_content" />-->
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_marginBottom="5dp"
-                        android:background="#ff11ff"
-                        android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="University - Educational Tour"
-                        android:textAllCaps="true"
-                        android:textColor="#03A9F4"
-                        android:textSize="12sp" />
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginBottom="5dp"-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="Educational Tour A"
-                        android:textColor="#000"
-                        android:textSize="14sp" />
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/outdoors_cities" />-->
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:text="Rp 25.000 / person"
-                        android:textColor="#000"
-                        android:textSize="12sp" />
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="University - Educational Tour"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="#03A9F4"-->
+            <!--android:textSize="8sp" />-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Educational Tour A"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="14sp" />-->
 
-                        <RatingBar
-                            style="?android:attr/ratingBarStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp" />
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="Rp 25.000 / person"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="12sp" />-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center_vertical"
-                            android:text="(279 Review)"
-                            android:textColor="#000"
-                            android:textSize="10sp" />
-                    </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
 
-                </LinearLayout>
-            </LinearLayout>
+            <!--<RatingBar-->
+            <!--style="?android:attr/ratingBarStyleSmall"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="5dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="(279 Review)"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="10sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/show_all"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_selector" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -444,7 +473,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="@string/experience"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -469,7 +498,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="130dp"
                             android:scaleType="fitXY"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@drawable/outdoors_cities" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -504,7 +533,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="130dp"
                             android:scaleType="fitXY"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@drawable/outdoors_cities" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -526,7 +555,7 @@
                 android:layout_marginBottom="5dp"
                 android:text="@string/recent_tour"
                 android:textColor="#000"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView

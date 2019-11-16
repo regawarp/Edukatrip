@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar tb = (Toolbar)findViewById(R.id.tbSearch);
+        Toolbar tb = findViewById(R.id.tbSearch);
         setSupportActionBar(tb);
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_nav);
