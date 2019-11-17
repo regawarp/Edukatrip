@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.edukatrip.edukatrip.object.Tour;
-import com.edukatrip.edukatrip.listedutour.GridRatedAdapter;
+import com.edukatrip.edukatrip.model.Tour;
+import com.edukatrip.edukatrip.adapter.GridRatedAdapter;
 
 public class EduTourFragment extends Fragment {
     GridView gridRated, gridPrice;

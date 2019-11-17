@@ -16,13 +16,27 @@
     <string name="best_price_edu_tour_in_bandung">Best Price Educational Tour in Bandung</string>
     <string name="best_rated_edu_tour_in_bandung">Best Rated Educational Tour in Bandung</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="experience">Experience</string>
     <string name="user">User</string>
     <string name="recent_tour">Recent Tour</string>
     <string name="limited_tour_you_can_enjoy">Limited tour you can enjoy!</string>
     <string name="favorite_tour">Favorite Tour</string>
+    <string name="please_review_booking">Please review your booking details before continuing to payment</string>
+    <string name="title_of_tour">Title of Tour</string>
+    <string name="cancelation_policy">Cancelation Policy Applies</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="price_details">Price Details</string>
+    <string name="tax">Tax</string>
+    <string name="included">Included</string>
+    <string name="continue_payment">Continue Payment</string>
+    <string name="please_fill_out_form">Please Fill out the Form</string>
+    <string name="destination">Destination</string>
+    <string name="include_travel_time">Include the travel from previous destination to this destination to the timeline</string>
+    <string name="view_report">View Report</string>
+    <string name="pembayaran_berhasil">Pembayaran Berhasil</string>
+    <string name="pembayaran_terverifikasi">Pembayaran anda telah terverifikasi</string>
 
     <!-- Custom Calendar View -->
     <!-- Weekday -->
@@ -99,6 +113,7 @@
     <string name="proceed_to_payment">Proceed to Payment</string>
     <string name="bank_transfer_text">If you choose bank transfer, you will transfer only to bank listed below</string>
     <string name="bank_transfer_text2">All bank account name is PT. Edukatrip</string>
+    <string name="more">More</string>
 
     <!-- Detail Edu Tour -->
     <string name="university_edu_tour">UNIVERSITY - EDUCATIONAL TOUR</string>
@@ -134,7 +149,7 @@
     <string name="please_transfer">Please transfer <b>until the last 3 digits</b> </string>
     <string name="different_number">Different number will make the verification process delayed</string>
     <string name="i_already_transfered">I Already Transfered</string>
-    
+
     <!-- Add Next Destination Activity -->
     <string name="please_fill">Please Fill out the Form</string>
     <string name="start_time">Start Time</string>
@@ -160,5 +175,10 @@
         <item>April</item>
     </string-array>
     <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id purus ligula. Suspendisse sit amet suscipit quam. In ante nulla, finibus id rutrum id, aliquet sed nulla. Curabitur turpis purus, gravida vel ex porta, consectetur aliquet leo. Pellentesque at felis pellentesque, lobortis est vel, tristique nisi. In hac habitasse platea dictumst. Maecenas blandit vitae ex a malesuada. Proin rutrum non ante in auctor. Sed vestibulum luctus ante, id tempus urna faucibus id. Sed quis urna metus. Vivamus ipsum ante, lacinia ut dolor a, ornare rhoncus justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</string>
+    <string name="create_tour">Create Tour</string>
+    <string name="choose_the_next">Choose the Next</string>
+    <string name="add_next_destination">Add Next Destination</string>
+    <string name="end_tour">End Tour</string>
+    <string name="edit">Edit</string>
 
 </resources>

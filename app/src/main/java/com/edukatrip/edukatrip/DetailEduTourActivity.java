@@ -8,15 +8,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.edukatrip.edukatrip.detailedutour.EduImageGridAdapter;
-import com.edukatrip.edukatrip.detailedutour.FacGridAdapter;
-import com.edukatrip.edukatrip.detailedutour.TimelineAdapter;
-import com.edukatrip.edukatrip.detailwisata.DetailReviewsAdapter;
-import com.edukatrip.edukatrip.object.Facilities;
-import com.edukatrip.edukatrip.listedutour.CustomGridView;
-import com.edukatrip.edukatrip.object.Places;
-import com.edukatrip.edukatrip.object.Reviews;
-import com.edukatrip.edukatrip.object.Timeline;
+import com.edukatrip.edukatrip.adapter.EduImageGridAdapter;
+import com.edukatrip.edukatrip.adapter.FacGridAdapter;
+import com.edukatrip.edukatrip.adapter.TimelineAdapter;
+import com.edukatrip.edukatrip.adapter.DetailReviewsAdapter;
+import com.edukatrip.edukatrip.model.Facilities;
+import com.edukatrip.edukatrip.customview.CustomGridView;
+import com.edukatrip.edukatrip.model.Places;
+import com.edukatrip.edukatrip.model.Reviews;
+import com.edukatrip.edukatrip.model.Timeline;
 
 import java.util.ArrayList;
 import java.util.Date;

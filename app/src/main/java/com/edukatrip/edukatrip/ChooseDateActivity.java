@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.edukatrip.edukatrip.calendarview.CustomCalendarView;
+import com.edukatrip.edukatrip.customview.CustomCalendarView;
 
 public class ChooseDateActivity extends AppCompatActivity {
     CustomCalendarView dateChooser;

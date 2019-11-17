@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.edukatrip.edukatrip.tourguide.ListTourGuideAdapter;
-import com.edukatrip.edukatrip.object.TourGuide;
+import com.edukatrip.edukatrip.adapter.ListTourGuideAdapter;
+import com.edukatrip.edukatrip.model.TourGuide;
 
 public class TourGuideActivity extends AppCompatActivity {
     private ListView listView;

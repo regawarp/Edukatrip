@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTimelineActivity"
+    android:fillViewport="true">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/gray">
+                <TextView
+                    android:id="@+id/ct_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 June 2019"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/info"
+                    />
+                <TextView
+                    android:id="@+id/ct_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07.00 AM - 1.00 PM"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    app:layout_constraintTop_toBottomOf="@id/ct_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:drawableLeft="@drawable/ic_watch_later_black_24dp"
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/info"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_person_blue_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tour_guide"/>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detail_edu_timeline_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/detail_edu_fac_group"
+                android:padding="@dimen/activity_vertical_margin" >
+                <TextView
+                    android:id="@+id/detail_edu_txt_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tour_timeline"
+                    android:textSize="@dimen/largeText"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    app:layout_constraintTop_toBottomOf="@id/detail_edu_txt_timeline"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/circle_top"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/circle_bot"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/ct_next_group"/>
+                    <FrameLayout
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/circle_top"
+                        app:layout_constraintBottom_toTopOf="@id/circle_bot"
+                        app:layout_constraintStart_toStartOf="@id/circle_top"
+                        app:layout_constraintEnd_toEndOf="@id/circle_bot"
+                        android:background="@color/black"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ct_timeline_rv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/circle_top"
+                        android:layout_marginStart="10dp"
+                        android:nestedScrollingEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ct_next_group"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ct_timeline_rv"
+                        app:layout_constraintStart_toStartOf="@id/ct_timeline_rv"
+                        app:layout_constraintEnd_toEndOf="parent">
+                        <TextView
+                            android:id="@+id/ct_txt_choose_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choose_the_next"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>
+                        <Button
+                            android:id="@+id/ct_btn_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            app:layout_constraintTop_toBottomOf="@id/ct_txt_choose_next"
+                            app:layout_constraintStart_toStartOf="@id/ct_txt_choose_next"
+                            android:padding="10dp"
+                            android:textAllCaps="false"
+                            android:text="@string/add_next_destination"
+                            android:background="@drawable/button_selector"
+                            android:textColor="@drawable/button_selector"/>
+                        <Button
+                            android:id="@+id/ct_btn_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            app:layout_constraintTop_toBottomOf="@id/ct_txt_choose_next"
+                            app:layout_constraintStart_toEndOf="@id/ct_btn_add"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+                            android:padding="10dp"
+                            android:textAllCaps="false"
+                            android:text="@string/end_tour"
+                            android:background="@drawable/button_selector_brick"
+                            android:textColor="@drawable/button_selector_brick"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/total_cost"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Rp 0.000"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ person"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/chooseLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_selector"
+                android:text="@string/create_tour"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_selector" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
