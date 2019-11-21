@@ -17,7 +17,7 @@
         android:text="University - Educational Tour"
         android:textSize="@dimen/infoText"
         android:layout_marginBottom="4dp"
-        android:textColor="@color/info"
+        android:textColor="@color/colorPrimary"
         android:layout_height="wrap_content">
 
     </TextView>
@@ -44,26 +44,13 @@
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="12dp"
+        <RatingBar
+            android:id="@+id/mdetRate"
+            style="@style/SmallGoldRatingBar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/star"/>
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/star"/>
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/star"/>
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/star"/>
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/star"/>
+            android:progressTint="@color/star"
+            android:isIndicator="true"/>
         <TextView
             android:id="@+id/mdetReview"
             android:gravity="center_vertical"

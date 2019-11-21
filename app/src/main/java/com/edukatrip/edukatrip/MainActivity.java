@@ -1,5 +1,6 @@
 package com.edukatrip.edukatrip;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -12,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    Toolbar toolbar;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_inbox:
                     return true;
                 case R.id.nav_setting:
+                    startActivity(new Intent(getApplicationContext(),MoreActivity.class));
                     return true;
             }
             return false;
@@ -43,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar tb = findViewById(R.id.tbSearch);
-        setSupportActionBar(tb);
+        toolbar = findViewById(R.id.tbSearch);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_nav);
         navigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

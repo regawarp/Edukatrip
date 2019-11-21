@@ -38,7 +38,7 @@
                 android:layout_below="@id/choosenDate"
                 android:layout_marginStart="18dp"
                 android:text="price"
-                android:textColor="@color/info"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/priceText" />
         </LinearLayout>
 

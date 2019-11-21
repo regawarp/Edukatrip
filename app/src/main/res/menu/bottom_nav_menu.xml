@@ -7,7 +7,7 @@
         android:title="@string/home" />
     <item
         android:id="@+id/nav_transaction"
-        android:icon="@drawable/common_google_signin_btn_icon_dark"
+        android:icon="@drawable/bankbook"
         android:title="@string/transaction" />
     <item
         android:id="@+id/nav_trips"
@@ -19,6 +19,6 @@
         android:title="@string/inbox" />
     <item
         android:id="@+id/nav_setting"
-        android:icon="@drawable/common_google_signin_btn_icon_dark"
+        android:icon="@drawable/more"
         android:title="@string/more" />
 </menu>

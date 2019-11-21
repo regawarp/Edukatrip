@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
@@ -44,25 +45,12 @@ public class ListTourGuideAdapter extends BaseAdapter {
         ImageView image = (ImageView) convertView.findViewById(R.id.tour_guide_img); // get the reference of ImageView
         TextView nama = (TextView)convertView.findViewById(R.id.tour_guide_nama);
         TextView bio = (TextView)convertView.findViewById(R.id.tour_guide_bio);
-        LinearLayout bintang = (LinearLayout) convertView.findViewById(R.id.tour_guide_star);
+        RatingBar bintang = (RatingBar) convertView.findViewById(R.id.tour_guide_star);
 
         image.setImageResource(tourGuides[position].getGambar());
         nama.setText(tourGuides[position].getNama());
         bio.setText(tourGuides[position].getBio());
-
-        int star = tourGuides[position].getBintang();
-        for (int i=0;i<star;i++){
-            ImageView imgBintang = new ImageView(context);
-            imgBintang.setImageResource(R.drawable.star);
-
-            int size = context.getResources().getDimensionPixelSize(R.dimen.star_size);
-            int margin = context.getResources().getDimensionPixelSize(R.dimen.star_margin);
-            ViewGroup.MarginLayoutParams marginLayoutParams = new ViewGroup.MarginLayoutParams(size,size);
-            marginLayoutParams.rightMargin = margin;
-            imgBintang.setLayoutParams(marginLayoutParams);
-            bintang.addView(imgBintang);
-
-        }
+        bintang.setRating((float)tourGuides[position].getBintang());
 
         return convertView;
     }

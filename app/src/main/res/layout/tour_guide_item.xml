@@ -43,13 +43,13 @@
                     android:layout_marginBottom="10dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"/>
 
-                <LinearLayout
+                <RatingBar
                     android:id="@+id/tour_guide_star"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
+                    style="@style/SmallGoldRatingBar"
+                    android:progressTint="@color/star"
+                    android:isIndicator="true"/>
             </LinearLayout>
 
 

@@ -30,7 +30,7 @@
             android:padding="5dp"
             android:src="@drawable/ic_person_black_24dp"
             android:background="@drawable/circle"
-            android:backgroundTint="@color/info"
+            android:backgroundTint="@color/colorPrimary"
             app:layout_constraintTop_toTopOf="@id/choose_person_spinner"
             app:layout_constraintBottom_toBottomOf="@id/choose_person_spinner"
             android:tint="@color/white"

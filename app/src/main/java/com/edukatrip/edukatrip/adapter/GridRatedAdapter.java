@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
@@ -45,12 +46,14 @@ public class GridRatedAdapter extends BaseAdapter {
         TextView judul = (TextView)view.findViewById(R.id.mdetJudul);
         TextView harga = (TextView)view.findViewById(R.id.mdetPrice);
         TextView review = (TextView)view.findViewById(R.id.mdetReview);
+        RatingBar rate = (RatingBar)view.findViewById(R.id.mdetRate);
 
         image.setImageResource(data[i].getImage());
         info.setText(data[i].getInfo());
         judul.setText(data[i].getJudul());
         harga.setText(data[i].getHarga());
         review.setText(data[i].getReview());
+        rate.setRating((float)data[i].getBintang());
         return view;
     }
 

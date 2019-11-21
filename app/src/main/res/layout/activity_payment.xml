@@ -13,7 +13,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray"
+            android:background="@color/grey"
             android:padding="@dimen/activity_vertical_margin">
             <TextView
                 android:id="@+id/payment_txt_total"
@@ -30,7 +30,7 @@
                 android:layout_marginEnd="5dp"
                 app:layout_constraintEnd_toStartOf="@id/payment_expand"
                 app:layout_constraintTop_toTopOf="parent"
-                android:textColor="@color/orange"
+                android:textColor="@color/orangeish"
                 android:textStyle="bold"/>
             <ImageView
                 android:id="@+id/payment_expand"
@@ -86,7 +86,7 @@
         <View
             android:layout_height="2dp"
             android:layout_width="match_parent"
-            android:background="@color/gray"/>
+            android:background="@color/grey"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/copy_account_number"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/info"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/smallText"
                 app:layout_constraintTop_toBottomOf="@id/payment_bank_image"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -142,7 +142,7 @@
         <View
             android:layout_height="2dp"
             android:layout_width="match_parent"
-            android:background="@color/gray"/>
+            android:background="@color/grey"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                 android:layout_marginTop="10dp"
                 app:layout_constraintTop_toBottomOf="@id/payment_txt_amount"
                 app:layout_constraintStart_toStartOf="parent"
-                android:textColor="@color/orange"
+                android:textColor="@color/orangeish"
                 android:textStyle="bold"
                 android:text="Rp 100.123"
                 android:textSize="@dimen/exlargeText"/>
@@ -180,7 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/copy_amount"
-                android:textColor="@color/info"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/smallText"
                 app:layout_constraintTop_toTopOf="@id/payment_txt_please_transfer"
                 app:layout_constraintEnd_toEndOf="parent"/>

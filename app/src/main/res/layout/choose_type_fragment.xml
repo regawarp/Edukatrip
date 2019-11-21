@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="@string/swipe_untuk"
             android:textSize="@dimen/exsmallText"
-            android:textColor="@color/info"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintTop_toBottomOf="@id/choose_type_text"
             app:layout_constraintStart_toStartOf="parent"/>
 
