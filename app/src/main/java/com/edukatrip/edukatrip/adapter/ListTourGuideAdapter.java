@@ -6,27 +6,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.edukatrip.edukatrip.R;
-import com.edukatrip.edukatrip.model.TourGuide;
+import com.edukatrip.edukatrip.model.Guide;
+
+import java.util.ArrayList;
 
 public class ListTourGuideAdapter extends BaseAdapter {
     private Context context;
-    private TourGuide[] tourGuides;
+    private ArrayList<Guide> guides;
     LayoutInflater inflater;
 
-    public ListTourGuideAdapter(Context context, TourGuide[] tourGuides, LayoutInflater inflater) {
+    public ListTourGuideAdapter(Context context, ArrayList<Guide> guides, LayoutInflater inflater) {
         this.context = context;
-        this.tourGuides = tourGuides;
+        this.guides = guides;
         this.inflater = inflater;
     }
 
     @Override
     public int getCount() {
-        return tourGuides.length;
+        return guides.size();
     }
 
     @Override
@@ -47,10 +48,10 @@ public class ListTourGuideAdapter extends BaseAdapter {
         TextView bio = (TextView)convertView.findViewById(R.id.tour_guide_bio);
         RatingBar bintang = (RatingBar) convertView.findViewById(R.id.tour_guide_star);
 
-        image.setImageResource(tourGuides[position].getGambar());
-        nama.setText(tourGuides[position].getNama());
-        bio.setText(tourGuides[position].getBio());
-        bintang.setRating((float)tourGuides[position].getBintang());
+        image.setImageResource(R.drawable.tour_guide);
+        nama.setText(guides.get(position).getGuideName());
+        bio.setText(guides.get(position).getGuideBio());
+        bintang.setRating((float) 4);
 
         return convertView;
     }

@@ -16,6 +16,11 @@ import com.edukatrip.edukatrip.adapter.PackageGridAdapter;
 import com.edukatrip.edukatrip.adapter.SliderAdapter;
 import com.edukatrip.edukatrip.customview.CustomGridView;
 import com.edukatrip.edukatrip.model.Package;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -25,6 +30,7 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     private ArrayList<Package> packageArrayList = new ArrayList<>();
+    private PackageGridAdapter packageGridAdapter;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -63,16 +69,30 @@ public class HomeFragment extends Fragment {
         sliderView.startAutoCycle();
 
         // Grid
-        initializeFavPackageData();
+        getFavPackageFromDb();
         CustomGridView gridFavorite = view.findViewById(R.id.grid_favorite);
-        PackageGridAdapter packageGridAdapter = new PackageGridAdapter(getContext(), R.id.tv_package_name, packageArrayList);
+        packageGridAdapter = new PackageGridAdapter(getContext(), R.id.tv_package_name, packageArrayList);
         gridFavorite.setAdapter(packageGridAdapter);
     }
 
-    private void initializeFavPackageData(){
-        packageArrayList.add(new Package("1","Educational Tour A",28000,R.drawable.outdoors_cities));
-        packageArrayList.add(new Package("2","Educational Tour B",27000,R.drawable.outdoors_cities));
-        packageArrayList.add(new Package("3","Educational Tour C",26000,R.drawable.outdoors_cities));
-        packageArrayList.add(new Package("4","Educational Tour D",25000,R.drawable.outdoors_cities));
+    private void getFavPackageFromDb() {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("packages")
+                .limit(4)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Package aPackage = document.toObject(Package.class);
+                                packageArrayList.add(aPackage);
+                                packageGridAdapter.notifyDataSetChanged();
+                            }
+                        } else {
+                            //Error getting document
+                        }
+                    }
+                });
     }
 }

@@ -2,20 +2,24 @@ package com.edukatrip.edukatrip.model;
 
 import com.google.firebase.firestore.GeoPoint;
 
+import java.util.ArrayList;
+
 public class Package {
     private String packageId;
     private String packageTitle;
     private int totalPrice;
     private GeoPoint packageLocation;
-    private int packagePictures; // Sementara tipenya int dulu karena pake resource local
+    private ArrayList<String> packagePictures; // Sementara tipenya int dulu karena pake resource local
 //    packageDuration : number
 //    packageFacilities : Array
 //    packageTimeline : Array
 //    packageReviews : Array
 //    packageDate : String
 
+    public Package() {
+    }
 
-    public Package(String packageId, String packageTitle, int totalPrice, int packagePictures) {
+    public Package(String packageId, String packageTitle, int totalPrice, ArrayList<String> packagePictures) {
         this.packageId = packageId;
         this.packageTitle = packageTitle;
         this.totalPrice = totalPrice;
@@ -32,9 +36,5 @@ public class Package {
 
     public int getTotalPrice() {
         return totalPrice;
-    }
-
-    public int getPackagePictures() {
-        return packagePictures;
     }
 }

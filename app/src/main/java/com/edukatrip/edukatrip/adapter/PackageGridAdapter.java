@@ -45,7 +45,7 @@ public class PackageGridAdapter extends ArrayAdapter {
         TextView tvReviewCount = itemView.findViewById(R.id.tv_review_count);
 
         Package aPackage = packageArrayList.get(position);
-        imgPackage.setImageResource(aPackage.getPackagePictures());
+        imgPackage.setImageResource(R.drawable.outdoors_cities);
         tvPackageType.setText("University - Educational Tour");
         tvPackageName.setText(aPackage.getPackageTitle());
         tvPackagePrice.setText(String.format("Rp. %s / person", aPackage.getTotalPrice()));
