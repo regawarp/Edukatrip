@@ -10,10 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".NotificationActivity"
             android:label="@string/notifications"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MoreActivity"
             android:label="@string/more"
@@ -24,7 +31,7 @@
         <activity android:name=".CreateTimelineActivity" />
         <activity
             android:name=".SplashScreen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PaymentReportActivity" />
         <activity android:name=".ReviewBookingActivity" />
         <activity
@@ -46,7 +53,7 @@
         <activity
             android:name=".DetailWisataActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TourGuideActivity" />
+        <activity android:name=".ChooseTourGuideActivity" />
         <activity
             android:name=".login.SignInActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -58,13 +65,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
