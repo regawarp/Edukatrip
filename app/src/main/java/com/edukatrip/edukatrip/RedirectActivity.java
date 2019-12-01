@@ -19,25 +19,30 @@ public class RedirectActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_redirect);
 
-        Button btnChooseTourGuide = findViewById(R.id.btnChooseTourGuide);
+        Button btnChooseTourGuide = findViewById(R.id.btn_go_choose_guide);
         btnChooseTourGuide.setOnClickListener(this);
-        Button btnHome = findViewById(R.id.btnHome);
+        Button btnHome = findViewById(R.id.btn_go_home);
         btnHome.setOnClickListener(this);
-        Button btnSignIn = findViewById(R.id.btnSignIn);
+        Button btnSignIn = findViewById(R.id.btn_go_sign_in);
         btnSignIn.setOnClickListener(this);
+        Button btnBookTour = findViewById(R.id.btn_go_book_tour);
+        btnBookTour.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnChooseTourGuide:
+            case R.id.btn_go_choose_guide:
                 intent = new Intent(RedirectActivity.this, ChooseTourGuideActivity.class);
                 break;
-            case R.id.btnHome:
+            case R.id.btn_go_home:
                 intent = new Intent(RedirectActivity.this, MainActivity.class);
                 break;
-            case R.id.btnSignIn:
+            case R.id.btn_go_sign_in:
                 intent = new Intent(RedirectActivity.this, SignInActivity.class);
+                break;
+            case R.id.btn_go_book_tour:
+                intent = new Intent(RedirectActivity.this, BookTourActivity.class);
                 break;
         }
         startActivity(intent);

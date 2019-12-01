@@ -19,22 +19,28 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/btn_go_sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Go To Sign In" />
 
         <Button
-            android:id="@+id/btnHome"
+            android:id="@+id/btn_go_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Go To Home(Main)" />
 
         <Button
-            android:id="@+id/btnChooseTourGuide"
+            android:id="@+id/btn_go_choose_guide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Go To Choose Tour Guide" />
+
+        <Button
+            android:id="@+id/btn_go_book_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go To Book Tour" />
     </LinearLayout>
 
 </ScrollView>
